@@ -55,13 +55,14 @@ img {
 .blur-background {
   position: absolute;
   margin-top: 20px;
+  margin-left: 5px;
   top: 50%;
   left: 50%;
-  width: 500px;
-  height: 500px; 
+  width: 450px;
+  height: 450px; 
   background:var(--accent_color); 
   border-radius: 50%;
-  filter: blur(200px);
+  filter: blur(400px);
   transform: translate(-50%, -50%);
   z-index: 0 !important;
 }
