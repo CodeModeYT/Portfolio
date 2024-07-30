@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Inconsolata');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@100;400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
 
 :root {
@@ -28,8 +28,83 @@ img {
   border-radius: 50%;
 }
 
+/* ======== IMAGE & BLURR STYLE ======== */
+/* src/BlurImage.css */
+.container {
+  position: relative;
+  display: inline-block;
+}
+
+.blur-background {
+  position: absolute;
+  margin-top: 20px;
+  margin-left: 5px;
+  top: 50%;
+  left: 50%;
+  width: 500px;
+  height: 500px; 
+  background:var(--accent_color); 
+  border-radius: 50%;
+  filter: blur(200px);
+  transform: translate(-50%, -50%);
+  z-index: 0 !important;
+}
+
+.main-image {
+  position: relative;
+  z-index: 1 !important;
+}
+
+
+
+/* ======== HERO SECTION STYLE ======== */
+.HeroSection {
+  display: flex;
+  align-items: center;
+  margin-top: 10em;
+}
+
 .HeroSection h1{
   color: var(--accent_color);
   font-weight: 900;
-  font-size: 50px;
+  font-size: 60px;
 }
+
+.HeroSection h3 {
+  font-family: 'Inconsolata', monospace;
+  font-weight: 100 !important;
+  font-size: 150%;
+}
+
+.HeroSection img {
+  margin-right: 2em; 
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 6em; /*Margin between picture and texts*/
+}
+
+.text-container h1 {
+  margin-top: 0;
+}
+
+
+.inline-container {
+  display: flex;
+  align-items: center;
+}
+
+.inline-container h2 {
+  font-size: 1.5em;
+  /* margin-left: 1em; */
+  margin-right: 0.5em; /* Space between "I'm a" and the animated text */
+  font-family: Inconsolata;
+}
+
+.type-animation {
+  color: var(--accent_color); 
+  font-size: 1.5em;
+}
+
