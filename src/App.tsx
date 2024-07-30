@@ -1,13 +1,13 @@
 // App.tsx
 import React from 'react';
 import HeroSection from './components/Hero';
-
+import LanguageSelector from './components/LangChange'
 
 const App: React.FC = () => {
-  const texts: string[] = ['Hello World!', 'Welcome to React.', 'Enjoy your stay!'];
 
   return (
     <div className="App">
+      <LanguageSelector />
       <HeroSection />
     </div>
   );
