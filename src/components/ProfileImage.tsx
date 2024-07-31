@@ -1,4 +1,3 @@
-// src/BlurImage.tsx
 import React from 'react';
 
 const ProfileImage: React.FC = () => {

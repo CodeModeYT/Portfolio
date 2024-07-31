@@ -20,7 +20,6 @@ const HeroSection: React.FC = () => {
     }, [isInView]);
 
     useEffect(() => {
-        // Change the typingKey to force TypeAnimation to re-render
         setTypingKey(prevKey => prevKey + 1);
     }, [i18n.language]);
 
@@ -56,7 +55,7 @@ const HeroSection: React.FC = () => {
                     <div className="inline-container">
                         <h2>{t("herosec.ima")}</h2>
                         <TypeAnimation
-                            key={typingKey}  // This key will change when the language changes
+                            key={typingKey}
                             className="type-animation"
                             sequence={typingSequence}
                             speed={50}
