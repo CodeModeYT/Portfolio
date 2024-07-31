@@ -1,6 +1,13 @@
 {
     "herosec": {
         "greeting": "Hey there, my name is",
-        "ima": "I'm a"
+        "ima": "I'm a",
+        "typeeffect": {
+            "student": "student",
+            "webdev": "Web developer",
+            "pydev": "Python developer",
+            "uides": "UI Designer",
+            "tech": "passionate tech tinkerer :)"
+        }
     }
 }
