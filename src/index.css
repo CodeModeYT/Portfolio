@@ -6,6 +6,7 @@
   --background_color: rgba(0, 0, 30, 1);
   --text_color: rgba(255, 255, 255, 1);
   --accent_color: rgba(11, 148, 86, 1);
+  --margin_elemets: 10vm;
 }
 
 body {
@@ -18,6 +19,9 @@ body {
 
 h1 {
   font-family: Inter;
+  color: var(--accent_color);
+  font-size: 2.5em;
+  font-weight: 800;
 }
 
 h2 {
@@ -26,6 +30,10 @@ h2 {
 
 img {
   border-radius: 50%;
+}
+
+p {
+  font-size: 1.4rem;
 }
 
 /* ======== LANGUAGE SELECTOR ======== */
@@ -154,6 +162,12 @@ img {
   60% {
       transform: translateY(-5px);
   }
+}
+
+
+/* ======== ABOUT ME ========  */
+.about_me{
+  margin-top: 20vw;
 }
 
 /* Large screens */
