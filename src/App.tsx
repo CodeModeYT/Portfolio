@@ -5,6 +5,7 @@ import ScrollPrompt from './components/ScrollPrompt';
 import AboutMe from './components/AboutMe';
 import Copyright from './components/Copyright';
 import Skills from './components/Skills';
+import Resume from './components/Resume';
 
 const App: React.FC = () => {
 
@@ -15,6 +16,7 @@ const App: React.FC = () => {
       <ScrollPrompt />
       <AboutMe />
       <Skills />
+      <Resume />
       <Copyright />
       
     </div>

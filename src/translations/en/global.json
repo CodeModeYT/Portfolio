@@ -36,6 +36,29 @@
             "content": "- GitHub\n- git\n- Visual Studio (-Code)\n- Figma\n- GIMP\n- DaVinci Resolve\n- Microsoft Office\n- wordpress\n- proxmox\n- ... and more!"
         }
     },
+    "resume": {
+        "title": "Resume",
+        "pesta": {
+            "date": "2014 - 2018",
+            "title": "Pestalozzi-Schule, Stuttgart",
+            "desc": "Elementary school (Grade 1 - 4)"
+        },
+        "fanny": {
+            "date": "since 2018",
+            "title": "Fanny-Leicht-Gymnasium, Stuttgart",
+            "desc": "Highschool (Grade 5 - 12)",
+            "subdesc": {
+                "web": "since 2022: Member of the WebAG",
+                "rewr": "2022 - 23: Rewrite of the entire school website (more below)",
+                "technik": "since 2024: Member of the TechnikAG"
+            }
+        },
+        "bogy": {
+            "date": "January 2024",
+            "title": "sprinteins, Stuttgart",
+            "desc": "As part of the BOGY-internship (a mandatory one-week internship in 10th grade)"
+        }
+    },
     "copyright": {
         "content": "©2024 Tillmann Menzer. All rights reserved."
     }

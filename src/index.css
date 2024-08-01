@@ -90,7 +90,7 @@ p {
 
 
 
-/* ======== HERO SECTION STYLE ======== */
+/* ======== HERO SECTION ======== */
 .HeroSection {
   display: flex;
   align-items: center;
@@ -182,6 +182,72 @@ p {
 .skills{
   margin-top: var(--topmargin_sections);
 }
+
+/* ======== RESUMÉ ======== */
+.resume {
+  margin-top: var(--topmargin_sections);
+}
+
+.timeline {
+  position: relative;
+  padding: 20px;
+  margin: 0;
+  width: 600px;
+}
+
+.timeline-event {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  position: relative;
+  padding-left: 30px; 
+}
+
+.timeline-dot {
+  width: 16px;
+  height: 16px;
+  background-color: var(--accent_color);
+  border-radius: 50%;
+  position: absolute;
+  left: 0; 
+  top: 10px; 
+  z-index: 1; 
+}
+
+.timeline-content {
+  background-color: #1c1c1c;
+  color: var(--text_color);
+  padding: 10px 20px;
+  border-radius: 8px;
+  position: relative;
+  margin-left: 30px; 
+}
+
+.timeline-content h3 {
+  margin: 0 0 10px 0;
+  font-size: 18px;
+}
+
+.timeline-content p {
+  margin: 0;
+  font-size: 16px;
+}
+
+.timeline-content ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.timeline-content li {
+  margin-bottom: 5px;
+}
+
+.p_highlight {
+  color: var(--accent_color);
+}
+
+
 
 /* ======== COPYRIGHT ========  */
 .copyright{

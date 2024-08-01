@@ -17,7 +17,7 @@ const HeroSection: React.FC = () => {
             mainControls.start("visible");
             setTimeout(() => {
                 textControls.start("visible");
-            }, 950); // delay for text fade-in --> it starts to fade in after the image is completely faded (so it doesnt do that hop-thing)
+            }, 980); // delay for text fade-in --> it starts to fade in after the image is completely faded (so it doesnt do that hop-thing)
         }
     }, [isInView]);
 
