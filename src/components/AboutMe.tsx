@@ -29,7 +29,7 @@ const AboutMe: React.FC = () => {
             className='about_me'
         >
             <h1>{t("aboutme.title")}</h1>
-            <p>{t('aboutme.content').split('\n').map((item, key) => (
+            <p className='indent_one'>{t('aboutme.content').split('\n').map((item, key) => (
                     <React.Fragment key={key}>
                         {item}
                         <br />

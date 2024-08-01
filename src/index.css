@@ -6,7 +6,7 @@
   --background_color: rgba(0, 0, 30, 1);
   --text_color: rgba(255, 255, 255, 1);
   --accent_color: rgba(11, 148, 86, 1);
-  --margin_elemets: 10vm;
+  --topmargin_sections: 6vw;
 }
 
 body {
@@ -34,6 +34,14 @@ img {
 
 p {
   font-size: 1.4rem;
+}
+
+.indent_one{
+  margin-left: 1rem;
+}
+
+.indent_two{
+  margin-left: 2rem;
 }
 
 /* ======== LANGUAGE SELECTOR ======== */
@@ -168,6 +176,11 @@ p {
 /* ======== ABOUT ME ========  */
 .about_me{
   margin-top: 20vw;
+}
+
+/* ======== SKILLS ========  */
+.skills{
+  margin-top: var(--topmargin_sections);
 }
 
 /* ======== COPYRIGHT ========  */

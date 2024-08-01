@@ -17,7 +17,27 @@
         "title": "About me",
         "content": "My name is Tillmann Menzer.\nI am 16 years old and currently study in 11th grade of the Fanny-Leicht-Gymnasium in Stuttgart.\n\nIn my freetime I love tech tinkering.\nI play around with various programming languages and technologies, with my interest ranging from Hardware to Software and beyond.\n\nI also manage the school's website together with two fellow students and run the event tech for school events as part of a working group."
     },
+    "skills": {
+        "title": "Skills",
+        "languages": {
+            "title": "Languages",
+            "content": "- German (mother tongue)\n- English (C1; since 2016, bilingual)\n- French (B1; since 2019)"
+        },
+        "coding": {
+            "title": "Coding",
+            "content": "- Python\n- JavaScript\n- TypeScript\n- HTML\n- CSS\n- C++\n- Svelte"
+        },
+        "hardware": {
+            "title": "Hardware",
+            "content": "- ESP32\n- Arduino"
+        },
+        "software": {
+            "title": "Software",
+            "content": "- GitHub\n- git\n- Visual Studio (-Code)\n- Figma\n- GIMP\n- DaVinci Resolve\n- Microsoft Office\n- wordpress\n- proxmox\n- ... and more!"
+        }
+    },
     "copyright": {
         "content": "©2024 Tillmann Menzer. All rights reserved."
     }
+    
 }

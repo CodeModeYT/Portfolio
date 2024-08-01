@@ -4,6 +4,7 @@ import LanguageSelector from './components/LangChange'
 import ScrollPrompt from './components/ScrollPrompt';
 import AboutMe from './components/AboutMe';
 import Copyright from './components/Copyright';
+import Skills from './components/Skills';
 
 const App: React.FC = () => {
 
@@ -13,7 +14,9 @@ const App: React.FC = () => {
       <HeroSection />
       <ScrollPrompt />
       <AboutMe />
+      <Skills />
       <Copyright />
+      
     </div>
   );
 };
