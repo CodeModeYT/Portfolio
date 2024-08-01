@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
 
 :root {
-  --margin_sides: 10em;
+  --margin_sides: 10vw;
   --background_color: rgba(0, 0, 30, 1);
   --text_color: rgba(255, 255, 255, 1);
   --accent_color: rgba(11, 148, 86, 1);
@@ -58,8 +58,8 @@ img {
   margin-left: 5px;
   top: 50%;
   left: 50%;
-  width: 450px;
-  height: 450px; 
+  width: 30vw;
+  height: 30vw; 
   background:var(--accent_color); 
   border-radius: 50%;
   filter: blur(400px);
@@ -84,7 +84,7 @@ img {
 .HeroSection h1{
   color: var(--accent_color);
   font-weight: 900;
-  font-size: 60px;
+  font-size: 7vh !important;
 }
 
 .HeroSection h3 {
@@ -101,6 +101,8 @@ img {
   display: flex;
   flex-direction: column;
   margin-left: 6em; /*Margin between picture and texts*/
+  position: absolute;
+  left: 45vw;
 }
 
 .text-container h1 {
@@ -127,7 +129,7 @@ img {
 
 /* ======== 'SCROLL DOWN TO LEARN MORE' - SECTION ========  */
 .scroll-prompt {
-  margin-top: 10%;
+  bottom: 0;
   text-align: center;
   color: var(--text_color);
   font-size: 1.5rem;
@@ -151,5 +153,49 @@ img {
   }
   60% {
       transform: translateY(-5px);
+  }
+}
+
+/* Large screens */
+@media (min-width: 1200px) {
+  .HeroSection h1 {
+    font-size: 3rem; /* Increase heading size on larger screens */
+  }
+  
+  .HeroSection h3 {
+    font-size: 1.5rem;
+  }
+
+  .text-container {
+    margin-left: 2rem;
+  }
+
+  .HeroSection img {
+    margin-right: 2rem;
+  }
+}
+
+/* Small screens */
+@media (max-width: 768px) {
+  .HeroSection {
+    flex-direction: column;
+    margin-top: 3em;
+  }
+
+  .HeroSection img {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+
+  .text-container {
+    margin-left: 0;
+  }
+
+  .HeroSection h1 {
+    font-size: 2rem;
+  }
+
+  .HeroSection h3 {
+    font-size: 1rem;
   }
 }
