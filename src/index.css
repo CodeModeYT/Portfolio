@@ -170,6 +170,15 @@ p {
   margin-top: 20vw;
 }
 
+/* ======== COPYRIGHT ========  */
+.copyright{
+  text-align: center;
+  margin-top: 10vw;
+}
+
+
+
+
 /* Large screens */
 @media (min-width: 1200px) {
   .HeroSection h1 {
