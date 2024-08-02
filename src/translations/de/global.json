@@ -17,6 +17,48 @@
         "title": "Über mich",
         "content": "Ich heiße Tillmann Menzer.\nIch bin 16 Jahre alt und aktuell in der 11. Klasse des Fanny-Leicht-Gymnasiums in Stuttgart.\n\nIn meiner Freizeit beschäftige ich mich sehr gerne mit Technik.\nIch spiele mit verschiedenen Programmiersprachen und Technologien herum, wobei mein Interesse von Hardware bis hin zu Software und darüber hinaus reicht.\n\nAußerdem verwalte ich zusammen mit zwei Mitschülern die Website der Schule und kümmere mich als Teil einer Arbeitsgruppe um die Veranstaltungstechnik für Schulveranstaltungen."
     },
+    "skills": {
+        "title": "Skills",
+        "languages": {
+            "title": "Sprachen",
+            "content": "- Deutsch (Muttersprache)\n- Englisch (C1; seit 2016, bilingual)\n- Französisch (B1; seit 2019)"
+        },
+        "coding": {
+            "title": "Coding",
+            "content": "- Python\n- JavaScript\n- TypeScript\n- HTML\n- CSS\n- C++\n- Svelte"
+        },
+        "hardware": {
+            "title": "Hardware",
+            "content": "- ESP32\n- Arduino"
+        },
+        "software": {
+            "title": "Software",
+            "content": "- GitHub\n- git\n- Visual Studio (-Code)\n- Figma\n- GIMP\n- DaVinci Resolve\n- Microsoft Office\n- wordpress\n- proxmox\n- ... und mehr"
+        }
+    },
+    "resume": {
+        "title": "Lebenslauf",
+        "pesta": {
+            "date": "2014 - 2018",
+            "title": "Pestalozzi-Schule, Stuttgart",
+            "desc": "Grundschule (Klasse 1 - 4)"
+        },
+        "fanny": {
+            "date": "seit 2018",
+            "title": "Fanny-Leicht-Gymnasium, Stuttgart",
+            "desc": "Gymnasium (Klasse 5 - 12)",
+            "subdesc": {
+                "web": "seit 2022: Mitglied der WebAG (Verwalten der Schul-Website)",
+                "rewr": "2022 - 23: Rewrite der gesamten Shul-Website (siehe unten)",
+                "technik": "seit 2024: Mitglied der TechnikAG (Veranstaltungstechnik)"
+            }
+        },
+        "bogy": {
+            "date": "Februar 2024",
+            "title": "sprinteins, Stuttgart",
+            "desc": "Einwöchiges Praktikum als Teil des 'BOGY'-Programms der 10. Klasse"
+        }
+    },
     "copyright": {
         "content": "©2024 Tillmann Menzer. Alle Rechte vorbehalten."
     }

@@ -33,11 +33,11 @@
         },
         "software": {
             "title": "Software",
-            "content": "- GitHub\n- git\n- Visual Studio (-Code)\n- Figma\n- GIMP\n- DaVinci Resolve\n- Microsoft Office\n- wordpress\n- proxmox\n- ... and more!"
+            "content": "- GitHub\n- git\n- Visual Studio (-Code)\n- Figma\n- GIMP\n- DaVinci Resolve\n- Microsoft Office\n- wordpress\n- proxmox\n- ... and more"
         }
     },
     "resume": {
-        "title": "Resume",
+        "title": "Resumé",
         "pesta": {
             "date": "2014 - 2018",
             "title": "Pestalozzi-Schule, Stuttgart",
@@ -48,15 +48,15 @@
             "title": "Fanny-Leicht-Gymnasium, Stuttgart",
             "desc": "Highschool (Grade 5 - 12)",
             "subdesc": {
-                "web": "since 2022: Member of the WebAG",
+                "web": "since 2022: Member of the WebAG (managing the school's website)",
                 "rewr": "2022 - 23: Rewrite of the entire school website (more below)",
-                "technik": "since 2024: Member of the TechnikAG"
+                "technik": "since 2024: Member of the TechnikAG (event tech)"
             }
         },
         "bogy": {
-            "date": "January 2024",
+            "date": "February 2024",
             "title": "sprinteins, Stuttgart",
-            "desc": "As part of the BOGY-internship (a mandatory one-week internship in 10th grade)"
+            "desc": "One-week internship as part of the 'BOGY'-programme in 10th grade"
         }
     },
     "copyright": {
