@@ -6,6 +6,7 @@ import AboutMe from './components/AboutMe';
 import Copyright from './components/Copyright';
 import Skills from './components/Skills';
 import Resume from './components/Resume';
+import Contact from './components/Contact';
 
 const App: React.FC = () => {
 
@@ -17,8 +18,8 @@ const App: React.FC = () => {
       <AboutMe />
       <Skills />
       <Resume />
+      <Contact />
       <Copyright />
-      
     </div>
   );
 };

@@ -247,7 +247,25 @@ p {
   color: var(--accent_color);
 }
 
+/* ======== CONTACT ======== */
+.contact {
+  margin-top: var(--topmargin_sections);
+}
 
+.contact a {
+  color: var(--text_color);
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.mail, .github, .phone {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1em;
+}
+.mail_text, .github_text, .phone_text {
+  margin-left: 20px;
+}
 
 /* ======== COPYRIGHT ========  */
 .copyright{
