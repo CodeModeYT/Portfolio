@@ -7,6 +7,7 @@
   --text_color: rgba(255, 255, 255, 1);
   --accent_color: rgba(11, 148, 86, 1);
   --topmargin_sections: 6vw;
+  --box_bg_color: #1c1c1c;
 }
 
 body {
@@ -215,7 +216,7 @@ p {
 }
 
 .timeline-content {
-  background-color: #1c1c1c;
+  background-color: var(--box_bg_color);
   color: var(--text_color);
   padding: 10px 20px;
   border-radius: 8px;
@@ -247,6 +248,58 @@ p {
   color: var(--accent_color);
 }
 
+
+/* ======== PROJECTS ======== */
+.projects{
+  margin-top: var(--topmargin_sections);
+}
+
+.projects h2{
+  color: var(--accent_color);
+}
+
+.scrolling-wrapper {
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+  cursor: grab;
+}
+
+.scrolling-wrapper:active {
+  cursor: grabbing; /* (to change cursor while dragging) */
+}
+
+.card {
+  flex: 0 0 300px;
+  height: 400px;
+  margin-right: 10px; 
+  background-color: var(--box_bg_color);
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.card-content {
+  height: 100%; 
+  display: flex;
+  flex-direction: column; 
+  text-align: center;
+  padding: 10px; 
+  box-sizing: border-box;
+  white-space: normal;
+  margin: 10px;
+  user-select: none;
+}
+
+.card-icons{
+  align-items: center;
+}
+
+.card-icons *{
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+
 /* ======== CONTACT ======== */
 .contact {
   margin-top: var(--topmargin_sections);
@@ -266,6 +319,7 @@ p {
 .mail_text, .github_text, .phone_text {
   margin-left: 20px;
 }
+
 
 /* ======== COPYRIGHT ========  */
 .copyright{
