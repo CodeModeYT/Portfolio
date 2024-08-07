@@ -1,10 +1,10 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { motion, useInView, useAnimation } from "framer-motion";
+import { motion, useInView, useAnimation } from 'framer-motion';
 
 const Projects: React.FC = () => {
     // Translation & Animation
-    const { t, i18n } = useTranslation("global");
+    const { t } = useTranslation('global');
     const ref = useRef(null);
     const isInView = useInView(ref, { once: true });
     const mainControls = useAnimation();
@@ -12,29 +12,29 @@ const Projects: React.FC = () => {
 
     useEffect(() => {
         if (isInView) {
-            mainControls.start("visible");
-            slideControls.start("visible");
+            mainControls.start('visible');
+            slideControls.start('visible');
         }
     }, [isInView]);
 
-    //Horizontal scroll with drag n drop:
+    // Horizontal scroll with drag n drop:
     const scrollingWrapperRef = useRef<HTMLDivElement>(null);
-  
-    let isDown = false;
-    let startX: number;
-    let scrollLeft: number;
+    const [isDown, setIsDown] = useState(false);
+    const [startX, setStartX] = useState(0);
+    const [scrollLeft, setScrollLeft] = useState(0);
+    
 
     const handleMouseDown = (e: React.MouseEvent) => {
-        isDown = true;
+        setIsDown(true);
         if (scrollingWrapperRef.current) {
             scrollingWrapperRef.current.classList.add('active');
-            startX = e.pageX - scrollingWrapperRef.current.offsetLeft;
-            scrollLeft = scrollingWrapperRef.current.scrollLeft;
+            setStartX(e.pageX - scrollingWrapperRef.current.offsetLeft);
+            setScrollLeft(scrollingWrapperRef.current.scrollLeft);
         }
     };
 
     const handleMouseLeaveOrUp = () => {
-        isDown = false;
+        setIsDown(false);
         if (scrollingWrapperRef.current) {
             scrollingWrapperRef.current.classList.remove('active');
         }
@@ -50,6 +50,7 @@ const Projects: React.FC = () => {
         }
     };
 
+
     return (
         <motion.div
             ref={ref}
@@ -60,11 +61,11 @@ const Projects: React.FC = () => {
             initial="hidden"
             animate={mainControls}
             transition={{ duration: 1, delay: 0.25 }}
-            className='projects'
-        >            
-            <h1>{t("projects.title")}</h1>
-            <p>In my freetime, I love working on tech projects to improve my skills and ideally create a positive impact. Here’s a small selection of them:</p>
-            <div 
+            className="projects"
+        >
+            <h1>{t('projects.title')}</h1>
+            <p>{t('projects.description')}</p>
+            <div
                 className="scrolling-wrapper"
                 ref={scrollingWrapperRef}
                 onMouseDown={handleMouseDown}
@@ -74,97 +75,97 @@ const Projects: React.FC = () => {
             >
                 <div className="card">
                     <div className="card-content">
-                        <h2>Fanny-WP</h2>
-                        <p>PHP | CSS | JS</p>
-                        <p>The Wordpress theme for the official website of my school (created with two other fellow students)</p>
+                        <h2>{t('projects.fanny-wp.title')}</h2>
+                        <p>{t('projects.fanny-wp.lang')}</p>
+                        <p>{t('projects.fanny-wp.desc')}</p>
                         <div className="card-icons">
                             <a href="https://github.com/Mr-comand/fanny-wp" target="blank">
-                                <img src="/gh_icon.png" alt="GitHub" height="40px" width="40px"/>
+                                <img src="/gh_icon.png" alt="GitHub" height="40px" width="40px" />
                             </a>
                             <a href="https://www.fanny-leicht.de" target="blank">
-                                <img src="/web_icon.png" alt="Web" height="40px" width="40px"/>
+                                <img src="/web_icon.png" alt="Web" height="40px" width="40px" />
                             </a>
                         </div>
                     </div>
                 </div>
                 <div className="card">
                     <div className="card-content">
-                        <h2>Notion WebUntis</h2>
-                        <p>Python</p>
-                        <p>Easily synchronise your WebUntis timetable to Notion! Using the Notion- and the WebUntis API</p>
+                        <h2>{t('projects.notion-webuntis.title')}</h2>
+                        <p>{t('projects.notion-webuntis.lang')}</p>
+                        <p>{t('projects.notion-webuntis.desc')}</p>
                         <div className="card-icons">
                             <a href="https://github.com/CodeModeYT/Notion-WebUntis" target="blank">
-                                <img src="/gh_icon.png" alt="GitHub" height="40px" width="40px"/>
+                                <img src="/gh_icon.png" alt="GitHub" height="40px" width="40px" />
                             </a>
                         </div>
                     </div>
                 </div>
                 <div className="card">
                     <div className="card-content">
-                    <h2>DLS Player Search</h2>
-                        <p>HTML/CSS | JS</p>
-                        <p>A website to search the unofficial database of the popular mobile game Dream League Soccer by FirstTouchGames</p>
+                        <h2>{t('projects.dls-playersearch.title')}</h2>
+                        <p>{t('projects.dls-playersearch.lang')}</p>
+                        <p>{t('projects.dls-playersearch.desc')}</p>
                         <div className="card-icons">
                             <a href="https://github.com/CodeModeYT/DLS-Player-search" target="blank">
-                                <img src="/gh_icon.png" alt="GitHub" height="40px" width="40px"/>
+                                <img src="/gh_icon.png" alt="GitHub" height="40px" width="40px" />
                             </a>
                             <a href="https://codemodeyt.github.io/DLS-Player-search/" target="blank">
-                                <img src="/web_icon.png" alt="Web" height="40px" width="40px"/>
+                                <img src="/web_icon.png" alt="Web" height="40px" width="40px" />
                             </a>
                         </div>
                     </div>
                 </div>
                 <div className="card">
                     <div className="card-content">
-                        <h2>EURO24 - CGA</h2>
-                        <p>HTML/CSS | JS | Python</p>
-                        <p>A website to that played the song 'Major Tom' by Peter Schilling whenever Germany scored during the EUROs 2024</p>
+                        <h2>{t('projects.euro-cga.title')}</h2>
+                        <p>{t('projects.euro-cga.lang')}</p>
+                        <p>{t('projects.euro-cga.desc')}</p>
                         <div className="card-icons">
                             <a href="https://github.com/CodeModeYT/DLS-Player-search" target="blank">
-                                <img src="/gh_icon.png" alt="GitHub" height="40px" width="40px"/>
+                                <img src="/gh_icon.png" alt="GitHub" height="40px" width="40px" />
                             </a>
                             <a href="https://codemodeyt.github.io/DLS-Player-search/" target="blank">
-                                <img src="/web_icon.png" alt="Web" height="40px" width="40px"/>
+                                <img src="/web_icon.png" alt="Web" height="40px" width="40px" />
                             </a>
                         </div>
                     </div>
                 </div>
                 <div className="card">
                     <div className="card-content">
-                        <h2>Personal Portfolio</h2>
-                        <p>React | TS | HTML</p>
-                        <p>The crazy website that you're currently visiting ;) Built and designed completely from scratch</p>
+                        <h2>{t('projects.portfolio.title')}</h2>
+                        <p>{t('projects.portfolio.lang')}</p>
+                        <p>{t('projects.portfolio.desc')}</p>
                         <div className="card-icons">
                             <a href="https://github.com/CodeModeYT/Portfolio" target="blank">
-                                <img src="/gh_icon.png" alt="GitHub" height="40px" width="40px"/>
+                                <img src="/gh_icon.png" alt="GitHub" height="40px" width="40px" />
                             </a>
                             {/* Idea: add easter egg when user clicks on the web icon */}
                             <a href="." target="blank">
-                                <img src="/web_icon.png" alt="Web" height="40px" width="40px"/>
+                                <img src="/web_icon.png" alt="Web" height="40px" width="40px" />
                             </a>
                         </div>
                     </div>
                 </div>
                 <div className="card">
                     <div className="card-content">
-                        <h2>ToDo</h2>
-                        <p>Svelte | TS</p>
-                        <p>A rather simple ToDo-App that I built during my internship at sprinteins (more info above)</p>
+                        <h2>{t('projects.todo.title')}</h2>
+                        <p>{t('projects.todo.lang')}</p>
+                        <p>{t('projects.todo.desc')}</p>
                         <div className="card-icons">
                             <a href="https://github.com/CodeModeYT/ToDo" target="blank">
-                                <img src="/gh_icon.png" alt="GitHub" height="40px" width="40px"/>
+                                <img src="/gh_icon.png" alt="GitHub" height="40px" width="40px" />
                             </a>
                         </div>
                     </div>
                 </div>
                 <div className="card">
                     <div className="card-content">
-                        <h2>Spotify2mp3</h2>
-                        <p>Python</p>
-                        <p>A set of Python scripts that automatically convert entire Spotify playlists into mp3 files at once</p>
+                        <h2>{t('projects.spotify2mp3.title')}</h2>
+                        <p>{t('projects.spotify2mp3.lang')}</p>
+                        <p>{t('projects.spotify2mp3.desc')}</p>
                         <div className="card-icons">
                             <a href="https://github.com/CodeModeYT/spotify2mp3" target="blank">
-                                <img src="/gh_icon.png" alt="GitHub" height="40px" width="40px"/>
+                                <img src="/gh_icon.png" alt="GitHub" height="40px" width="40px" />
                             </a>
                         </div>
                     </div>
@@ -172,6 +173,6 @@ const Projects: React.FC = () => {
             </div>
         </motion.div>
     );
-}
+};
 
 export default Projects;

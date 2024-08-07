@@ -60,7 +60,46 @@
         }
     },
     "projects": {
-        "title": "Projekte"
+        "title": "Projekte",
+        "description": "In meiner Freizeit arbeite ich gerne an Technikprojekten, um meine Fähigkeiten zu verbessern und idealerweise einen positiven Einfluss zu schaffen. Hier ist eine kleine Auswahl davon:",
+        "fanny-wp": {
+            "title": "Fanny-WP",
+            "lang": "PHP | CSS | JS",
+            "desc": "Das Wordpress-Theme für die offizielle Website meiner Schule (erstellt mit zwei weiteren Mitschülern)"
+        },
+        "notion-webuntis": {
+            "title": "Notion WebUntis",
+            "lang": "Python",
+            "desc": "Ein Python tool, das einem ermöglicht, seinen WebUntis Stundenplan mit Notion zu synchronisieren"
+        },
+        "dls-playersearch": {
+            "title": "DLS Player Search",
+            "lang": "HTML/CSS | JS",
+            "desc": "Eine Website zum Durchsuchen der inoffiziellen Spielerdatenbank des Handyspiels DLS"
+        },
+        "euro-cga": {
+            "title": "EURO24 - CGA",
+            "lang": "HTML/CSS | JS | Python",
+            "desc": "Eine Website, die während der EURO24 automatisch MajorTom als Torhymne von Deutschland spielte"
+        },
+        "portfolio": {
+            "title": "Persönliches Portfolio",
+            "lang": "React | TS | HTML",
+            "desc": "Die krasse Website, die du hier gerade anschaust :) Komplett delbst designed und entiwckelt"
+        },
+        "todo": {
+            "title": "To-Do",
+            "lang": "Svelte | TS",
+            "desc": "Eine simple ToDo-App, die ich während eines Praktikums bei sprinteins erstellen durfte"
+        },
+        "spotify2mp3": {
+            "title": "Spotify2mp3",
+            "lang": "Python",
+            "desc": "Eine Reihe von Python-Skripten, die ganze Spotify-Playlists auf einmal automatisch in mp3-Dateien umwandeln"
+        }
+    },
+    "contact": {
+        "title": "Kontakt"
     },
     "copyright": {
         "content": "©2024 Tillmann Menzer. Alle Rechte vorbehalten."

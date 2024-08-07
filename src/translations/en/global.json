@@ -60,7 +60,43 @@
         }
     },
     "projects": {
-        "title": "Projects"
+        "title": "Projects",
+        "description": " In my freetime, I love working on tech projects to improve my skills and ideally create a positive impact. Here’s a small selection of them:",
+        "fanny-wp": {
+            "title": "Fanny-WP",
+            "lang": "PHP | CSS | JS",
+            "desc": "The Wordpress theme for the official website of my school (created with two other fellow students)"
+        },
+        "notion-webuntis": {
+            "title": "Notion WebUntis",
+            "lang": "Python",
+            "desc": "Easily synchronise your WebUntis timetable to Notion! Using the Notion- and the WebUntis API"
+        },
+        "dls-playersearch": {
+            "title": "DLS Player Search",
+            "lang": "HTML/CSS | JS",
+            "desc": "A website to search the unofficial player database of the popular mobile game Dream League Soccer"
+        },
+        "euro-cga": {
+            "title": "EURO24 - CGA",
+            "lang": "HTML/CSS | JS | Python",
+            "desc": "A website to that played the song 'Major Tom' by Peter Schilling whenever Germany scored during the EUROs 2024"
+        },
+        "portfolio": {
+            "title": "Personal Portfolio",
+            "lang": "React | TS | HTML",
+            "desc": "The crazy website that you're currently visiting ;) Built and designed completely from scratch"
+        },
+        "todo": {
+            "title": "To-Do",
+            "lang": "Svelte | TS",
+            "desc": "A rather simple ToDo-App that I built during my internship at sprinteins (more info above)"
+        },
+        "spotify2mp3": {
+            "title": "Spotify2mp3",
+            "lang": "Python",
+            "desc": "A set of Python scripts that automatically convert entire Spotify playlists into mp3 files at once"
+        }
     },
     "contact": {
         "title": "Contact"
