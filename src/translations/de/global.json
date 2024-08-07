@@ -96,6 +96,9 @@
             "title": "Spotify2mp3",
             "lang": "Python",
             "desc": "Eine Reihe von Python-Skripten, die ganze Spotify-Playlists auf einmal automatisch in mp3-Dateien umwandeln"
+        },
+        "more": {
+            "title": "Mehr auf meinem GitHub:"
         }
     },
     "contact": {

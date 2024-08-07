@@ -170,6 +170,17 @@ const Projects: React.FC = () => {
                         </div>
                     </div>
                 </div>
+                <div className="card">
+                    <div className="card-content-last">
+                        <h2>{t('projects.more.title')}</h2>
+                        <div className="card-icons">
+                            <a href="https://github.com/CodeModeYT/" target="blank">
+                                <img src="/gh_icon.png" alt="GitHub" height="70px" width="70px" />
+                                <h2>@CodeModeYT</h2>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </motion.div>
     );
