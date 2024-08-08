@@ -371,11 +371,6 @@ p {
 
 /* Small screens */
 @media (max-width: 768px) {
-  .HeroSection {
-    flex-direction: column;
-    margin-top: 3em;
-  }
-
   .HeroSection img {
     margin-right: 0;
     margin-bottom: 1rem;
@@ -391,5 +386,50 @@ p {
 
   .HeroSection h3 {
     font-size: 1rem;
+  }
+}
+
+
+/* ============================================== */
+/*                    MOBILE CSS                  */
+
+@media only screen and (max-width: 768px) {
+  /* hero */
+  .container {
+    margin: auto;
+  }
+  .main-image {
+    height: 60vw;
+    width: auto;
+    align-items: center;
+    justify-content: center;
+  }
+  .blur-background {
+    margin-top: 0px;
+    margin-left: 0px;
+    width: 80vw;
+    height: 80vw;
+  }
+  .HeroSection {
+    text-align: center !important;
+  }
+  .text-container {
+    text-align: center !important;
+    margin-top: 130vw;
+    left: 0 !important;
+  }
+  .text-container h1 {
+    font-size: 40px !important;
+    margin-left: 30px;
+  }
+  .inline-container {
+    display: none;
+  }
+  .scroll-prompt {
+    display: none;
+  }
+  /* space to next cnt */
+  .about_me{
+    margin-top: 80vw;
   }
 }
