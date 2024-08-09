@@ -394,6 +394,9 @@ p {
 /*                    MOBILE CSS                  */
 
 @media only screen and (max-width: 768px) {
+  p {
+    font-size: 100%;
+  }
   /* hero */
   .container {
     margin: auto;
