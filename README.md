@@ -1,5 +1,5 @@
 # Portfolio
 My personal Portfolio website
-<br>
+<hr>
 Designed with Figma.  
 Made with React (TypeScript). 
