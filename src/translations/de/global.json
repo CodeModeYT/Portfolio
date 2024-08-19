@@ -85,12 +85,12 @@
         "portfolio": {
             "title": "Persönliches Portfolio",
             "lang": "React | TS | HTML",
-            "desc": "Die krasse Website, die du hier gerade anschaust :) Komplett delbst designed und entiwckelt"
+            "desc": "Die crazy Website, die du hier gerade anschaust :) Komplett delbst designed und entwickelt"
         },
         "todo": {
             "title": "To-Do",
             "lang": "Svelte | TS",
-            "desc": "Eine simple ToDo-App, die ich während eines Praktikums bei sprinteins erstellen durfte"
+            "desc": "Eine simple ToDo-App, die ich während meines Praktikums bei sprinteins erstellen durfte"
         },
         "spotify2mp3": {
             "title": "Spotify2mp3",
