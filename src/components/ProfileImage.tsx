@@ -14,7 +14,7 @@ const ProfileImage: React.FC = () => {
       transition={{ duration: 0.5 }}
     >
       <div className="blur-background"></div>
-      <img src="/image.png" alt="Portrait" height="450vw" width="auto" className="main-image" />
+      <img src="/cm.png" alt="Portrait" height="450vw" width="auto" className="main-image" />
     </motion.div>
   );
 };

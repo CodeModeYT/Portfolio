@@ -51,7 +51,8 @@ import { motion, useInView, useAnimation } from 'framer-motion';
                 <i>
                     <li>{t("resume.fanny.subdesc.web")}</li>
                     <li>{t("resume.fanny.subdesc.rewr")}</li>
-                    <li>{t("resume.fanny.subdesc.technik")}</li>
+                    <li>{t("resume.fanny.subdesc.roborace23")}</li>
+                    <li>{t("resume.fanny.subdesc.roborace24")}</li>
                 </i>
             </ul>
             </>

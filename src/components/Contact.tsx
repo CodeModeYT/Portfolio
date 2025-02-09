@@ -35,11 +35,11 @@ const Contact: React.FC = () => {
             </div>
             <div className='mail'>
                 <img src="/mail_icon.png" alt="Mail" height="45vw" width="auto"/>
-                <a href="mailto:l@l.com" className='mail_text'>not.gonna-leak@that.here</a>
+                <a href="mailto:hello@menzer.dev" className='mail_text'>hello@menzer.dev</a>
             </div>
             <div className='phone'>
                 <img src="/phone_icon.png" alt="Phone" height="45vw" width="auto"/>
-                <a href="tel:00491234567" className='phone_text'>+49 1234567</a>
+                <a className='phone_text'>Please contact me via email first.</a>
             </div>
         </motion.div>
     );

@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion, useInView, useAnimation } from "framer-motion";
+import Marquee from "react-fast-marquee";
 
 const Skills: React.FC = () => {
     const { t } = useTranslation("global");
@@ -77,12 +78,20 @@ const Skills: React.FC = () => {
             >
                 <h1>{t("skills.title")}</h1>
                 <h2 className='indent_one'>{t("skills.languages.title")}</h2>
-                <p className='indent_two'>{t('skills.languages.content').split('\n').map((item, key) => (
-                    <React.Fragment key={key}>
-                        {item}
-                        <br />
-                    </React.Fragment>
-                ))}</p>
+                <Marquee pauseOnHover={true} >
+                    <label htmlFor='german'><p>German (mother tongue)</p></label>
+                    <img id ="german" src="/icons/germany.png" alt="German (mother tongue)" height="80px" width="auto" style={{ marginRight: 100 }}/>
+                    <label htmlFor='english'><p>English (C1)</p></label>
+                    <img id ="english" src="/icons/england.png" alt="English (C1)" height="80px" width="auto" style={{ marginRight: 100 }}/>
+                    <label htmlFor='german'><p>French (B1)</p></label>
+                    <img id ="french" src="/icons/france.png" alt="French (B1)" height="80px" width="auto" style={{ marginRight: 100 }}/>
+                    {/* <p className='indent_two'>{t('skills.languages.content').split('\n').map((item, key) => (
+                        <React.Fragment key={key}>
+                            {item}
+                            <br />
+                        </React.Fragment>
+                    ))}</p> */}
+                </Marquee>
                 <br />
             </motion.div>
             <motion.div
@@ -96,12 +105,14 @@ const Skills: React.FC = () => {
                 transition={{ duration: 1, delay: 0 }}
             >
                 <h2 className='indent_one'>{t("skills.coding.title")}</h2>
-                <p className='indent_two'>{t('skills.coding.content').split('\n').map((item, key) => (
-                    <React.Fragment key={key}>
-                        {item}
-                        <br />
-                    </React.Fragment>
-                ))}</p>
+                <Marquee>
+                    {/* <p className='indent_two'>{t('skills.coding.content').split('\n').map((item, key) => (
+                        <React.Fragment key={key}>
+                            {item}
+                            <br />
+                        </React.Fragment>
+                    ))}</p> */}
+                </Marquee>
                 <br />
             </motion.div>
             <motion.div
@@ -115,12 +126,14 @@ const Skills: React.FC = () => {
                 transition={{ duration: 1, delay: 0 }}
             >
                 <h2 className='indent_one'>{t("skills.hardware.title")}</h2>
-                <p className='indent_two'>{t('skills.hardware.content').split('\n').map((item, key) => (
-                    <React.Fragment key={key}>
-                        {item}
-                        <br />
-                    </React.Fragment>
-                ))}</p>
+                <Marquee>
+                    {/* <p className='indent_two'>{t('skills.hardware.content').split('\n').map((item, key) => (
+                        <React.Fragment key={key}>
+                            {item}
+                            <br />
+                        </React.Fragment>
+                    ))}</p> */}
+                </Marquee>
                 <br />
             </motion.div>
             <motion.div
@@ -134,12 +147,14 @@ const Skills: React.FC = () => {
                 transition={{ duration: 1, delay: 0 }}
             >
                 <h2 className='indent_one'>{t("skills.software.title")}</h2>
-                <p className='indent_two'>{t('skills.software.content').split('\n').map((item, key) => (
-                    <React.Fragment key={key}>
-                        {item}
-                        <br />
-                    </React.Fragment>
-                ))}</p>
+                <Marquee>
+                    {/* <p className='indent_two'>{t('skills.software.content').split('\n').map((item, key) => (
+                        <React.Fragment key={key}>
+                            {item}
+                            <br />
+                        </React.Fragment>
+                    ))}</p> */}
+                </Marquee>
             </motion.div>
         </motion.div>
     );
