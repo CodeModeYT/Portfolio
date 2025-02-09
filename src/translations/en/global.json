@@ -50,7 +50,8 @@
             "subdesc": {
                 "web": "since 2022: Member of the WebAG (managing the school's website)",
                 "rewr": "2022 - 23: Rewrite of the entire school website (more below)",
-                "technik": "since 2024: Member of the TechnikAG (event tech)"
+                "roborace23": "2023: Placed 21st (of 55) in the roborace competition of Uni Stuttgart",
+                "roborace24": "2024: Placed 9th (of 46) and 3rd of all student teams in the roborace competition of Uni Stuttgart"
             }
         },
         "bogy": {
@@ -70,7 +71,7 @@
         "notion-webuntis": {
             "title": "Notion WebUntis",
             "lang": "Python",
-            "desc": "Easily synchronise your WebUntis timetable to Notion! Using the Notion- and the WebUntis API"
+            "desc": "Easily synchronize your WebUntis timetable to Notion! Using the Notion- and the WebUntis API"
         },
         "dls-playersearch": {
             "title": "DLS Player Search",
